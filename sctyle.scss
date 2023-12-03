@@ -1,0 +1,122 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Paaji+2:wght@400;500;600&family=Cinzel:wght@400;500;600&family=Edu+TAS+Beginner:wght@500;600;700&family=Hedvig+Letters+Serif:opsz@12..24&family=IBM+Plex+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,700&family=Manrope:wght@200&family=Play&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&family=Rubik:wght@300&family=Smooch+Sans:wght@100&family=Ubuntu:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Paaji+2:wght@400;500;600&family=Cinzel:wght@400;500;600&family=Edu+TAS+Beginner:wght@500;600;700&family=Hedvig+Letters+Serif:opsz@12..24&family=IBM+Plex+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,700&family=Lobster+Two:ital,wght@0,400;0,700;1,400&family=Manrope:wght@200&family=Play&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&family=Rubik:wght@300&family=Smooch+Sans:wght@100&family=Ubuntu:wght@300&display=swap');
+
+// font-family: 'Baloo Paaji 2', sans-serif;
+// font-family: 'Cinzel', serif;
+// font-family: 'Edu TAS Beginner', cursive;
+// font-family: 'Hedvig Letters Serif', serif;
+// font-family: 'IBM Plex Sans', sans-serif;
+// font-family: 'Manrope', sans-serif;
+// font-family: 'Play', sans-serif;
+// font-family: 'Playfair Display', serif;
+// font-family: 'Rubik', sans-serif;
+// font-family: 'Smooch Sans', sans-serif;
+// font-family: 'Ubuntu', sans-serif;
+
+header {
+    top: 0;
+    width: 100%;
+    height: 100px;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0 0 50px 50px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+    background: #fdfdff;
+
+    .head {
+        width: 90%;
+        height: 70%;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-family: Lobster Two;
+
+            h1 {
+                span {
+                    color: orange;
+                    font-size: 35px;
+                }
+
+                font-size: 25px;
+            }
+        }
+
+        .head_element {
+            display: flex;
+            gap: 55px;
+
+            a {
+                text-decoration: none;
+                color: rgb(0, 0, 0);
+                font-size: 25px;
+                transition: 0.3ms;
+                height: 30px;
+            }
+
+            a:hover {
+                border-bottom: 2px solid black;
+            }
+        }
+
+        .user {
+            width: 52px;
+            height: 52px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(120deg, rgb(158, 158, 158), rgb(0, 174, 255));
+
+            .uil {
+                margin-top: 2px;
+                font-size: 50px;
+                color: rgb(255, 255, 255);
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+.liked {
+    margin-top: 100px;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .liked_container{
+        width: 95%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .liked_r{
+            p{
+                color: gray;
+            }
+        }
+        .liked_l{
+            display: flex;
+            gap: 100px;
+            .uil{
+                font-size: 30px;
+                cursor: pointer;
+                color: gray;
+            }
+        }
+    }
+    // box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
+}
